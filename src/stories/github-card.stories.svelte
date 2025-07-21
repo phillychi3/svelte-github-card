@@ -6,10 +6,18 @@
 		title: 'Components/Github Card',
 		component: Github,
 		argTypes: {
-			repository: { control: 'text' }
+			repository: { control: 'text' },
+      enable_project_image: { control: 'boolean' },
+      enable_stars: { control: 'boolean' },
+      enable_forks: { control: 'boolean' },
+      enable_languages: { control: 'boolean' }
 		},
 		args: {
-			repository: 'sveltejs/svelte'
+			repository: 'sveltejs/svelte',
+      enable_project_image: true,
+      enable_stars: true,
+      enable_forks: true,
+      enable_languages: true
 		},
 		tags: ['autodocs']
 	})
